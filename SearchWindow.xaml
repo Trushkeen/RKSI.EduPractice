@@ -1,0 +1,19 @@
+﻿<Window x:Class="RKSI.EduPractice.SearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RKSI.EduPractice"
+        mc:Ignorable="d"
+        Title="SearchWindow" Height="126.663" Width="251.958" ResizeMode="NoResize">
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="cbSearchCols" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="222" Height="22"/>
+        <TextBox x:Name="tbSearchString" HorizontalAlignment="Left" Height="23" Margin="10,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" KeyDown="TbSearchString_KeyDown"/>
+        <Button x:Name="btnFind" Content="Искать" HorizontalAlignment="Left" Margin="157,65,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="BtnFind_Click"/>
+
+    </Grid>
+</Window>
